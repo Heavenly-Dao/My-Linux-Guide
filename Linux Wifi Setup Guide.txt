@@ -1,0 +1,41 @@
+Linux Wifi Setup Guide
+
+#wifi
+
+ip link
+wlo1 or such
+
+#optionally run
+lspci
+#to see if you have a wifi adapter
+replace wlo1 with your wifi adapter name
+
+do su and login as root
+touch /etc/wpa_supplicant/wpa_supplicant-wlo1.conf
+
+vi file 
+add two new lines;
+ctrl_interface=run/wpa_supplicant
+update_config=1
+:wq
+
+wpa_passphrase WIFI_NAME PASSWORD(for wifi ofc) >> /etc/wpa_supplicant/wpa_supplicant-wlo1.conf
+#optionally remove psk from the output
+vi /etc/wpa_supplicant/wpa_supplicant-wlo1.conf
+it will add 
+network={
+    ssid="SSID"
+    psk="PASSWORD"
+}
+or something similar
+:wq
+
+# Ensure the wireless interface is up
+ip link set wlo1 up
+
+wpa_supplicant -B -i wlo1 -c /etc/wpa_supplicant/wpa_supplicant-wlo1.conf
+# Obtain an IP address using DHCP
+dhclient wlo1
+
+# Check if you are connected to the internet
+ping goo.org or some site to check if you are connected to the internet

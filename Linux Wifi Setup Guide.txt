@@ -1,5 +1,7 @@
 Linux Wifi Setup Guide
 
+according to online guides it should be as such, did not work for me sadly
+
 #wifi
 
 ip link

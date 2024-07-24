@@ -10,3 +10,8 @@ used christitus mybash (https://github.com/ChrisTitusTech/mybash)
 got windows 10 icon theme using this randos github (https://github.com/SofianeHamlaoui/Go-undercover) prob like just copy and use the icons, 
 the rest is hot garbo ngl
 installed fastfetch, zoxide, starship, for mybash thing
+
+how to add windows to grub;
+sudo os-prober
+then you have to add "GRUB_DISABLE_OS_PROBER=false" to /etc/grub.d/30_os-prober, since it does not exist
+then sudo update-grub

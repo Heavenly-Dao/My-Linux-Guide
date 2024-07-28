@@ -15,3 +15,9 @@ how to add windows to grub;
 sudo os-prober
 then you have to add "GRUB_DISABLE_OS_PROBER=false" to /etc/grub.d/30_os-prober, since it does not exist
 then sudo update-grub
+
+How to to get virt-manager to work (void linux ofc)
+
+install virt-manager and qemu
+for it to work properly you must have this service enabled
+ln -s /etc/sv/libvirtd /var/service/

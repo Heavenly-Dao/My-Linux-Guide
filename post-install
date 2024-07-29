@@ -22,3 +22,9 @@ install virt-manager and qemu
 for it to work properly you must have these services enabled
 ln -s /etc/sv/libvirtd /var/service/
 ln -s /etc/sv/virtlogd /var/service/
+
+Sddm configuration;
+install sddm qt5 qt5-graphicaleffects qt5-quickcontrols (idk if it is needed exactly sddm-kcm) 
+sudo ln -s /etc/sv/sddm /var/service/
+optionally remove lightdm or any other previous installed
+sudo rm /var/service/"name"

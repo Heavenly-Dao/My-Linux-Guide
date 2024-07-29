@@ -19,5 +19,6 @@ then sudo update-grub
 How to to get virt-manager to work (void linux ofc)
 
 install virt-manager and qemu
-for it to work properly you must have this service enabled
+for it to work properly you must have these services enabled
 ln -s /etc/sv/libvirtd /var/service/
+ln -s /etc/sv/virtlogd /var/service/

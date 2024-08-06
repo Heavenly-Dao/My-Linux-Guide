@@ -35,3 +35,9 @@ Steam install;
 install steam
 install  libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit mono mesa-32bit vulkan-loader mesa-dri-32bit
 for amd mesa-vulkan-radeon mesa-vulkan-radeon-32bit
+
+Saving screen brightness; (only laptop? idk)
+install brightnessctl
+brightnessctl _ (test what you like)
+sudo (text editor) /etc/rc.local
+add "sudo brightnessctl set _"

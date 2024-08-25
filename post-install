@@ -41,3 +41,7 @@ install brightnessctl
 brightnessctl _ (test what you like)
 sudo (text editor) /etc/rc.local
 add "sudo brightnessctl set _"
+
+How to achieve passwordless sudo reboot;
+sudo mousepad /etc/sudoers
+add "user" ALL=NOPASSWD:/sbin/reboot

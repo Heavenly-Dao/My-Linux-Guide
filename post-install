@@ -28,6 +28,7 @@ ln -s /etc/sv/virtlogd /var/service/
 Sddm configuration;
 install sddm qt5 qt5-graphicaleffects qt5-quickcontrols (idk if it is needed exactly sddm-kcm) 
 sudo ln -s /etc/sv/sddm /var/service/
+sddm --example-config | sudo tee /etc/sddm.conf (in order to get base sddm config file)
 optionally remove lightdm or any other previous installed
 sudo rm /var/service/"name"
 

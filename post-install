@@ -26,7 +26,7 @@ ln -s /etc/sv/libvirtd /var/service/
 ln -s /etc/sv/virtlogd /var/service/
 
 Sddm configuration;
-install sddm qt5 qt5-graphicaleffects qt5-quickcontrols (idk if it is needed exactly sddm-kcm) 
+install sddm qt5 qt5-graphicaleffects qt5-quickcontrols qt5-quickcontrols2
 sudo ln -s /etc/sv/sddm /var/service/
 sddm --example-config | sudo tee /etc/sddm.conf (in order to get base sddm config file)
 optionally remove lightdm or any other previous installed
@@ -44,5 +44,5 @@ sudo (text editor) /etc/rc.local
 add "sudo brightnessctl set _"
 
 How to achieve passwordless sudo reboot;
-sudo mousepad /etc/sudoers
+sudovi
 add "user" ALL=NOPASSWD:/sbin/reboot

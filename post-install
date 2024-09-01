@@ -6,11 +6,10 @@ sudo xbps-install void-repo-multilib-nonfree
 sudo xbps-install -Su vivaldi
 sudo xbps-remove orca speech-dispatcher 
 sudo xbps-remove -Rf firefox
-sudo xbps-install xfce4-whiskermenu-plugin 
+sudo xbps-install rofi rofi-emoji
+sudo xbps-install font-emoji-one-color
 sudo xbps-install git make curl
 used christitus mybash (https://github.com/ChrisTitusTech/mybash)
-got windows 10 icon theme using this randos github (https://github.com/SofianeHamlaoui/Go-undercover) prob like just copy and use the icons, 
-the rest is hot garbo ngl
 installed fastfetch, zoxide, starship, for mybash thing
 
 how to add windows to grub;
